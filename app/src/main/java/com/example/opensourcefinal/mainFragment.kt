@@ -56,19 +56,6 @@ class mainFragment : Fragment() {
             }
 
         }
-
-
-        //2번화면에서는 1번 화면 3번 화면으로 넘어가는 클릭 이벤트만 필요!
-        val btn1 = view.findViewById<TextView>(R.id.btn1)
-        btn1.setOnClickListener {
-            it.findNavController().navigate(R.id.action_mainFragment_to_dateFragment)
-        }
-
-        val btn3 = view.findViewById<TextView>(R.id.btn3)
-        btn3.setOnClickListener {
-            it.findNavController().navigate(R.id.action_mainFragment_to_memoFragment)
-        }
-
         return view
     }
 

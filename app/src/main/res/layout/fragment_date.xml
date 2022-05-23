@@ -11,19 +11,7 @@
 
 <!--    D-Day를 나타낼 필수 레이아웃들-->
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="그대와 함께"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:layout_marginTop="50dp"
         android:scaleType="fitXY"
         android:src="@drawable/couple"
         android:layout_width="match_parent"
@@ -65,46 +53,5 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <TextView
-            android:id="@+id/btn1"
-            android:textColor="@color/white"
-            android:background="@color/black"
-            android:gravity="center"
-            android:textSize="30sp"
-            android:layout_weight="1"
-            android:text="데이트"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <TextView
-            android:textColor="@color/white"
-            android:background="@color/black"
-            android:id="@+id/btn2"
-            android:gravity="center"
-            android:textSize="30sp"
-            android:layout_weight="1"
-            android:text="메인"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <TextView
-            android:textColor="@color/white"
-            android:background="@color/black"
-            android:id="@+id/btn3"
-            android:gravity="center"
-            android:textSize="30sp"
-            android:layout_weight="1"
-            android:text="메모??"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
