@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/radius"
+    android:layout_margin="20dp"
+
+    android:orientation="vertical">
+    <!--    drawable에 추가한 radius이곳에 추가해줘야 하니 필요한 부분에 추가 즉
+    전체 감쌀꺼잖아 LinearLayout에 추가해주기!-->
+
+
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:scaleType="fitXY"
+        android:id="@+id/rvImageArea"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bob2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/rvTextArea"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
