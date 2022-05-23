@@ -1,6 +1,6 @@
 package com.example.opensource
 
-import com.example.afinal.BuildConfig
+import com.example.opensourcefinal.BuildConfig
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
