@@ -42,7 +42,7 @@ class SplashActivity : AppCompatActivity() {
             Handler().postDelayed({
                 startActivity(Intent(this, loginActivity::class.java))
                 finish()
-            }, 3000)   //회원가입이 안되어있으므로 splash화면 잠깐 보여주고 로그인화면으로 넘겨
+            }, 5000)   //회원가입이 안되어있으므로 splash화면 잠깐 보여주고 로그인화면으로 넘겨
          }
         else{
             //회원가입이 되어있으므로 MainActivity로 이동! 대신 메시지 추가해주고?
@@ -50,7 +50,7 @@ class SplashActivity : AppCompatActivity() {
             Handler().postDelayed({
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
-            }, 3000)
+            }, 5000)
         }
 
 //        //스플래쉬화면 불러오기
