@@ -1,5 +1,4 @@
 package com.example.opensourcefinal
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -9,7 +8,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    //전설의 시작!!
-    //전설의 시작2
-
+    //HyunSoo Branch Start!
 }
