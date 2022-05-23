@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.afinal.ContentsModel
+import com.example.opensourcefinal.ContentsModel
 
 
 class mainFragment : Fragment() {

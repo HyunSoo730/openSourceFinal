@@ -1,4 +1,4 @@
-package com.example.afinal
+package com.example.opensourcefinal
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.opensourcefinal.MangoModel
+import com.example.opensourcefinal.R
 
 //mango웹뷰 rv리스트를 받아올 어댑터
 class MangoRVAdapter(val context : Context, val List : MutableList<MangoModel>) : RecyclerView.Adapter<MangoRVAdapter.ViewHolder>(){

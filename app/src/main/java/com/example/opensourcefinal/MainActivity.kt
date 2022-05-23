@@ -1,4 +1,4 @@
-package com.example.afinal
+package com.example.opensourcefinal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
