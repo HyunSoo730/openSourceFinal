@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/first"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_date_range_24"
+        android:title="Date"
+        />
+    <item
+        android:id="@+id/second"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="Food"
+        />
+    <item
+        android:id="@+id/third"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_sticky_note_2_24"
+        android:title="Memo"
+        />
+
+
+</menu>
