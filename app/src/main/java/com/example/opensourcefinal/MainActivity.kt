@@ -9,8 +9,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    //전설의 시작!!
-    //전설의 시작2
-    //Dongjun branch 생성..
-
+    //HyunSoo Branch Start!
 }
