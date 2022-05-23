@@ -1,4 +1,4 @@
-package com.example.afinal
+package com.example.opensourcefinal
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.opensourcefinal.R
+import com.example.opensourcefinal.WebViewActivity
 
 class MangoActivity : AppCompatActivity() {
 

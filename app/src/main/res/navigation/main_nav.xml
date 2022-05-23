@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dateFragment"
-        android:name="com.example.afinal.dateFragment"
+        android:name="com.example.opensourcefinal.dateFragment"
         android:label="fragment_date"
         tools:layout="@layout/fragment_date" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.afinal.mainFragment"
+        android:name="com.example.opensourcefinal.mainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/memoFragment"
-        android:name="com.example.afinal.memoFragment"
+        android:name="com.example.opensourcefinal.memoFragment"
         android:label="fragment_memo"
         tools:layout="@layout/fragment_memo" >
         <action

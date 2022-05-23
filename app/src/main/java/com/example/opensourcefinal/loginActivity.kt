@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.opensourcefinal.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -35,7 +36,7 @@ class loginActivity : AppCompatActivity() {
                         // Sign in success, update UI with the signed-in user's information
                         //회원가입 성공하면 MainActivity로 넘겨주자 Intent사용
                         Toast.makeText(this, "회원가입 성공!", Toast.LENGTH_LONG).show()
-                        val intent = Intent(this,MainActivity::class.java)
+                        val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     } else {  //회원가입 실패시 작성할 것
                         // If sign in fails, display a message to the user.

@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.opensourcefinal.ContentsModel
 
 //이미지와 텍스트 링크까지 받아올꺼라 데이터모델형태로 받아오자
 class MainRvAdapter(val List : MutableList<ContentsModel>) : RecyclerView.Adapter<MainRvAdapter.ViewHolder>() {

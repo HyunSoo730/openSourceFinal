@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import com.example.afinal.memoDataModel
+import com.example.opensourcefinal.memoDataModel
 
 class memoListViewAdapter(val List : MutableList<memoDataModel>) : BaseAdapter() {
     override fun getCount(): Int {
