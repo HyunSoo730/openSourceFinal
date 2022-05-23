@@ -169,23 +169,6 @@ class dateFragment : Fragment() {
 
 
 
-
-
-
-
-
-        //1번 화면에서 1번 버튼을 누를 필요가 없으니 2,3번 버튼에 대해서만 클릭이벤트로 2,3번 화면으로 넘어가도록 하자
-        val btn2 = view.findViewById<TextView>(R.id.btn2)
-        btn2.setOnClickListener {
-            it.findNavController().navigate(R.id.action_dateFragment_to_mainFragment)
-        }
-
-        val btn3 = view.findViewById<TextView>(R.id.btn3)
-        btn3.setOnClickListener {
-            it.findNavController().navigate(R.id.action_dateFragment_to_memoFragment)
-        }
-
-
         return view
     }
 

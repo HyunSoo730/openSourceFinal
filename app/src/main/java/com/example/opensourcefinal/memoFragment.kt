@@ -249,25 +249,6 @@ class memoFragment : Fragment() {
             startActivity(intent)
             //여기 액티비티로 가서 수행하자.
         }
-
-
-
-
-
-
-        //Fragment  화면 전환 부분
-        //3번 화면에서는 1번 화면 2번 화면으로 넘어가는 클릭이벤트만 필요
-        val btn1 = view.findViewById<TextView>(R.id.btn1)
-        btn1.setOnClickListener {
-            it.findNavController().navigate(R.id.action_memoFragment_to_dateFragment)
-        }
-
-        val btn2 = view.findViewById<TextView>(R.id.btn2)
-        btn2.setOnClickListener {
-            it.findNavController().navigate(R.id.action_memoFragment_to_mainFragment)
-        }
-
-
         return view
     }
 
