@@ -11,6 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.navigation.findNavController
+import com.example.opensourcefinal.MangoActivity
+import com.example.opensourcefinal.memoDataModel
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

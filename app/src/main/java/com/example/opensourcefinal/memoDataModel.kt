@@ -1,4 +1,4 @@
-package com.example.afinal
+package com.example.opensourcefinal
 
 data class memoDataModel (
     val date : String = "",
