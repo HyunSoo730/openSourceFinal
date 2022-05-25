@@ -1,4 +1,4 @@
-package com.example.opensource
+package com.example.opensourcefinal
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
