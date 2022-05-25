@@ -1,7 +1,11 @@
 package com.example.opensourcefinal
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.webkit.WebSettings
 import android.webkit.WebView
 import android.widget.TextView
 import android.widget.Toast
@@ -20,8 +24,15 @@ class WebViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_web_view)
 
         //여기서 웹뷰 연동하기
-        val webview = findViewById<WebView>(R.id.webview)
+        val webview : WebView = findViewById(R.id.webview)
+        if(Build.VERSION.SDK_INT >= 21) {
+            Log.d("if","실행됨")
+            webview.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+            webview.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+        }
         webview.loadUrl(intent.getStringExtra("url").toString())
+
+
         //여기까지 하면 웹뷰 연결 끝.
 
         //이제 북마크 해주자  --> 파이어베이스 연동
