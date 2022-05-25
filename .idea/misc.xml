@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/fragment_date.xml" value="0.1" />
-        <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/fragment_memo.xml" value="0.1" />
-        <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/mango_rv_item.xml" value="0.1" />
-        <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/rv_item.xml" value="0.1" />
+        <entry key="..\:/Users/muset/AndroidStudioProjects/openSourceFInal2/app/src/main/res/layout/activity_apiactivity.xml" value="0.190625" />
+        <entry key="..\:/Users/muset/AndroidStudioProjects/openSourceFInal2/app/src/main/res/layout/activity_main.xml" value="0.190625" />
+        <entry key="..\:/Users/muset/AndroidStudioProjects/openSourceFInal2/app/src/main/res/layout/activity_splash.xml" value="0.190625" />
+        <entry key="..\:/Users/muset/AndroidStudioProjects/openSourceFInal2/app/src/main/res/layout/custom_dialog.xml" value="0.190625" />
+        <entry key="..\:/Users/muset/AndroidStudioProjects/openSourceFInal2/app/src/main/res/layout/gwang_store_list_rv.xml" value="0.190625" />
+        <entry key="..\:/Users/muset/AndroidStudioProjects/openSourceFInal2/app/src/main/res/layout/rv_item.xml" value="0.190625" />
+        <entry key="..\:/Users/muset/AndroidStudioProjects/openSourceFInal2/app/src/main/res/layout/store_list_rv.xml" value="0.1" />
       </map>
     </option>
   </component>

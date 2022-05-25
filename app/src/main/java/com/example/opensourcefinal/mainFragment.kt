@@ -32,7 +32,6 @@ class mainFragment : Fragment() {
 
 
         //구 위치만 추가???
-        items.add(ContentsModel("서초구 맛집"))
         items.add(ContentsModel("광진구 맛집"))
         items.add(ContentsModel("용산구 맛집"))
 
@@ -52,6 +51,7 @@ class mainFragment : Fragment() {
                 //아이템 클릭이 되면 새로운 액티비티로 넘겨줘 --> API를 적용한 리사이클러뷰가 있는 곳?
                 //mainFragment에서 클릭시...
                 val intent = Intent(context, APIActivity::class.java)
+                intent.putExtra("location", position);      //0 : 광진구, 1 : 용산구 (데이터 전달)
                 startActivity(intent)
             }
 
