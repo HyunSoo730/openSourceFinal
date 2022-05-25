@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="?attr/colorPrimary">
+    android:background="?attr/colorPrimary"
+    android:id="@+id/nav_header">
 
     <ImageView
         android:id="@+id/imageView"
@@ -11,21 +12,31 @@
         android:layout_height="52dp"
         app:srcCompat="@drawable/ic_baseline_account_circle_24"
         app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp" app:layout_constraintTop_toTopOf="parent"/> />
+        android:layout_marginTop="50dp" app:layout_constraintTop_toTopOf="parent"/>
+
 
     <TextView
-        android:text="Charlie Park"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:id="@+id/textView" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:textColor="#fff"/> />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="환영합니다"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
     <TextView
-        android:text="kiwinam@test.com"
+        android:id="@+id/email_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2" android:textSize="10sp"
-        android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:layout_marginStart="24dp" app:layout_constraintStart_toStartOf="parent" android:textColor="#fff"/>
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="로그인 정보 없음"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

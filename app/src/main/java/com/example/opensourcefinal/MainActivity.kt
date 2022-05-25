@@ -2,18 +2,28 @@ package com.example.opensourcefinal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.opensourcefinal.R
+
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_toolbar.*
 
+import android.view.View
+
+
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var auth: FirebaseAuth
 
     private val fragmentOne by lazy { dateFragment() }
     private val fragmentTwo by lazy { mainFragment() }
@@ -24,6 +34,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        auth = Firebase.auth
+        val currentUser = auth.currentUser
+
 
         //
         //Fragment만들고 네비게이션뷰에 연결하기
@@ -56,9 +70,15 @@ class MainActivity : AppCompatActivity() {
 
         val navView : NavigationView = findViewById(R.id.nav_view)
 
+        //네비게이션 헤더 이메일 세팅
+        val navigationView = findViewById<View>(R.id.nav_view) as NavigationView
+        navigationView.setNavigationItemSelectedListener{true}
+        val header: View = navigationView.getHeaderView(0)
+        header.findViewById<TextView>(R.id.email_address).setText(currentUser?.email)
+
+
 
         navView.setNavigationItemSelectedListener {
-
             when(it.itemId){
 
                 R.id.nav_home -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
@@ -75,6 +95,8 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
