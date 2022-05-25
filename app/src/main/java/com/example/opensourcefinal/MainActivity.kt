@@ -19,6 +19,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_toolbar.*
 
 import android.view.View
+import android.content.Intent
+
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -81,14 +85,13 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
 
-                R.id.nav_home -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
+                R.id.random_menu -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_message -> Toast.makeText(applicationContext, "Clicked Message", Toast.LENGTH_SHORT).show()
                 R.id.nav_sync -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_trash -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_setting -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_login -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.nav_share -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
-                R.id.nav_rate_us -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
+                R.id.nav_contact_us -> email()
 
             }
             true
@@ -141,6 +144,19 @@ class MainActivity : AppCompatActivity() {
         } else{
             super.onBackPressed()
         }
+    }
+
+    fun email()
+    {
+        val email = Intent(Intent.ACTION_SEND)
+        email.setType("plain/text")
+        // email setting 배열로 해놔서 복수 발송 가능
+        // email setting 배열로 해놔서 복수 발송 가능
+        val address = arrayOf("email@address.com")
+        email.putExtra(Intent.EXTRA_EMAIL, address)
+        email.putExtra(Intent.EXTRA_SUBJECT, "보내질 email 제목")
+        email.putExtra(Intent.EXTRA_TEXT, "보낼 email 내용을 미리 적어 놓을 수 있습니다.\n")
+        startActivity(email)
     }
 }
 
