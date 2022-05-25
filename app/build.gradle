@@ -19,9 +19,14 @@ android {
         versionCode 1
         versionName "1.0"
 
+        //광진구
         buildConfigField "String", "URL_STORE", properties['url.store']
         buildConfigField "String", "ENDPOINT_GET_STORE_STATUS", properties['endPoint.getStoreStatus']
         buildConfigField "String", "API_KEY", properties['api.key']
+        //용산구
+        buildConfigField "String", "URL_STORE_YONG", properties['url_yong.store']
+        buildConfigField "String", "ENDPOINT_GET_STORE_STATUS_YONG", properties['endPoint_yong.getStoreStatus']
+        buildConfigField "String", "API_KEY_YONG", properties['api_yong.key']
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
