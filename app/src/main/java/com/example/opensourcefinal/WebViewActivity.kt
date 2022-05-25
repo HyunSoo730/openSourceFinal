@@ -26,7 +26,8 @@ class WebViewActivity : AppCompatActivity() {
         //여기서 웹뷰 연동하기
         val webview : WebView = findViewById(R.id.webview)
         if(Build.VERSION.SDK_INT >= 21) {
-            Log.d("if","실행됨")
+            webview.getSettings().setJavaScriptEnabled(true);
+            webview.getSettings().setDomStorageEnabled(true)
             webview.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
             webview.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         }

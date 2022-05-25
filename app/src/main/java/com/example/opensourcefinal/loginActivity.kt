@@ -38,9 +38,6 @@ class loginActivity : AppCompatActivity() {
                         //회원가입 성공하면 MainActivity로 넘겨주자 Intent사용
                         Toast.makeText(this, "회원가입 성공!", Toast.LENGTH_LONG).show()
 
-                        //사이드 drawer에 계정 정보 띄우기
-                        var email_address = findViewById<TextView>(R.id.email_address)
-                        email_address.setText(email.text.toString())
 
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
