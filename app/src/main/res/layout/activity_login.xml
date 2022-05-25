@@ -17,6 +17,7 @@
 
     <EditText
         android:id="@+id/passwordArea"
+        android:inputType="textPassword"
         android:hint="password"
         android:layout_margin="20dp"
         android:layout_width="match_parent"

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/activity_apiactivity.xml" value="0.1296875" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/store_list_rv.xml" value="0.13072916666666667" />
         <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/fragment_date.xml" value="0.1" />
         <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/fragment_memo.xml" value="0.1" />

@@ -1,22 +1,21 @@
-package com.example.opensource
+package com.example.opensourcefinal
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.opensourcefinal.R
-import com.example.opensourcefinal.Store
+import com.example.opensource.GwangRvAdapter
 
-class GwangRvAdapter (val items : List<Store>) : RecyclerView.Adapter<GwangRvAdapter.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GwangRvAdapter.ViewHolder {
+class YongRvAdapter (val items : List<YongStore>) : RecyclerView.Adapter<YongRvAdapter.ViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): YongRvAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.store_list_rv,parent,false)
 
         return ViewHolder(view)
     }
 
 
-    override fun onBindViewHolder(holder: GwangRvAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: YongRvAdapter.ViewHolder, position: Int) {
         holder.bindItems(items[position])
         holder.itemView.setOnClickListener {
             itemClickListener.onClick(it,position)
@@ -29,11 +28,11 @@ class GwangRvAdapter (val items : List<Store>) : RecyclerView.Adapter<GwangRvAda
 
     inner class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
-        fun bindItems(item : Store){
+        fun bindItems(item : YongStore){
             val storeName = itemView.findViewById<TextView>(R.id.storeName)
             storeName.text = item.name
             val storeAddress = itemView.findViewById<TextView>(R.id.storeAddress)
-            storeAddress.text = item.address
+            storeAddress.text = item.address1
 
         }
     }
