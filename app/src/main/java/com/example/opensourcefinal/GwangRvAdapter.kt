@@ -28,7 +28,6 @@ class GwangRvAdapter (val items : List<Store>) : RecyclerView.Adapter<GwangRvAda
     }
 
     inner class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
-
         fun bindItems(item : Store){
             val storeName = itemView.findViewById<TextView>(R.id.storeName)
             storeName.text = item.name
@@ -36,6 +35,8 @@ class GwangRvAdapter (val items : List<Store>) : RecyclerView.Adapter<GwangRvAda
             storeAddress.text = item.address
 
         }
+
+
     }
 
 

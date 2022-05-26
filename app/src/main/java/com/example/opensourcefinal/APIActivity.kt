@@ -32,6 +32,14 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_apiactivity)
+
+        //북마크 기능 추가. LongClick 시 팝업창 띄워서 하자!
+
+
+
+
+
+
         
         //어디 맛집인지 데이터(인덱스) 받아오기
         val location : Int = intent.getIntExtra("location",0);
@@ -103,7 +111,7 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
 
                     //---------리싸이클러뷰 처리----------
                     val rv = findViewById<RecyclerView>(R.id.storeRv)   //리사이클러뷰 불러오기
-                    val rvAdapter = GwangRvAdapter(items)   
+                    val rvAdapter = GwangRvAdapter(items)
                     rv.adapter = rvAdapter
                     rv.layoutManager = LinearLayoutManager(applicationContext)
 
@@ -162,16 +170,34 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
                     rv.layoutManager = LinearLayoutManager(applicationContext)
 
                     //-----클릭 이벤트-----
+//                    rvAdapter.setItemClickListener(object : YongRvAdapter.OnItemClickListener{
+//                        override fun onClick(v: Int, position: Int) {
+//                            Toast.makeText(v.context,items[position].name,Toast.LENGTH_SHORT).show()
+//
+//                            //카메라를 클릭한 음식점 위치로 이동 및 확대
+//                            val cameraUpdate = CameraUpdate.scrollAndZoomTo(LatLng(items[position].latitude.toDouble(), items[position].longitude.toDouble()),16.0)
+//
+//
+//                            naverMap.moveCamera(cameraUpdate)
+//                        }
+//                    })
                     rvAdapter.setItemClickListener(object : YongRvAdapter.OnItemClickListener{
                         override fun onClick(v: View, position: Int) {
+                            //그냥 클릭 시
                             Toast.makeText(v.context,items[position].name,Toast.LENGTH_SHORT).show()
-
-                            //카메라를 클릭한 음식점 위치로 이동 및 확대
+//
+//                            카메라를 클릭한 음식점 위치로 이동 및 확대
                             val cameraUpdate = CameraUpdate.scrollAndZoomTo(LatLng(items[position].latitude.toDouble(), items[position].longitude.toDouble()),16.0)
 
 
                             naverMap.moveCamera(cameraUpdate)
                         }
+
+                        override fun onLongClick(v: View, position: Int) {
+                            //롱 클릭 시
+//                            Toast.makeText(v.context, "롱 클릭 성공", Toast.LENGTH_SHORT).show()
+                        }
+
                     })
                     rvAdapter.notifyDataSetChanged()
 
