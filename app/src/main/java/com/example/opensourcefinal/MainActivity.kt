@@ -1,28 +1,21 @@
 package com.example.opensourcefinal
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
+import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_toolbar.*
-
-import android.view.View
-import android.content.Intent
-
-
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -92,6 +85,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_setting -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_login -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_contact_us -> email()
+                R.id.nav_creator -> popup()
+
 
             }
             true
@@ -157,6 +152,13 @@ class MainActivity : AppCompatActivity() {
         email.putExtra(Intent.EXTRA_SUBJECT, "보내질 email 제목")
         email.putExtra(Intent.EXTRA_TEXT, "보낼 email 내용을 미리 적어 놓을 수 있습니다.\n")
         startActivity(email)
+    }
+
+    fun popup()
+    {
+        AlertDialog.Builder(this).setTitle("Creator")
+            .setMessage("18011656 김동준 \n18011662 조현수")
+            .create().show()
     }
 }
 
