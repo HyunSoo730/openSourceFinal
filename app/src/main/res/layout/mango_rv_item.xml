@@ -5,25 +5,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="40dp"
     android:layout_height="200dp"
-    android:background="@drawable/radius"
-    android:orientation="vertical">
+    android:background="@drawable/radius2"
+    android:orientation="vertical"
+    android:elevation="10dp">
 <!--    둥글게적용-->
-
 
 
     <ImageView
         android:id="@+id/rvImageArea"
+        android:layout_width="121dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"/>
+        android:src="@drawable/ic_launcher_background" />
 
 
     <TextView
         android:textSize="20sp"
         android:textStyle="bold"
         android:id="@+id/rvTextArea"
+        android:textColor="@color/white"
         android:text="text"
+        android:fontFamily="@font/nanumdasisijaghae"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:gravity="center"
