@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenSourceFInal">
         <activity
+            android:name=".Bookmark2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".BookmarkActivity"
+            android:exported="true" />
+        <activity
             android:name=".WebViewActivity"
             android:exported="true" />
         <activity

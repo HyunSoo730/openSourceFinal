@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/activity_apiactivity.xml" value="0.1" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/activity_bookmark.xml" value="0.253125" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/activity_bookmark2.xml" value="0.23854166666666668" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/fragment_main.xml" value="0.1296875" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/list_item_popup.xml" value="0.1296875" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/layout/store_list_rv.xml" value="0.12310030395136778" />
+        <entry key="..\:/Android_App_Study/openSourceFInal2/app/src/main/res/menu/list_popup.xml" value="0.1296875" />
         <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/activity_mango.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/dongj/StudioProjects/openSourceFInal/app/src/main/res/layout/activity_memo.xml" value="0.109375" />
