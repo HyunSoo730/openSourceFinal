@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".WebViewActivity">
 
-<!--    <Button-->
-<!--        android:id="@+id/saveBtn"-->
-<!--        android:layout_margin="5dp"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="북마크 저장!"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
 
     <WebView
         android:id="@+id/webview"

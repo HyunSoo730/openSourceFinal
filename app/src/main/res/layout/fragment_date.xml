@@ -18,10 +18,11 @@
         android:layout_height="match_parent"/>
 
     <TextView
+        android:fontFamily="@font/bm_ttf"
         android:id="@+id/countDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="바뀔 텍스트"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,21 +32,27 @@
 
 
     <Button
+        android:textStyle="bold"
+        android:fontFamily="@font/bm_ttf"
         android:background="@drawable/radius"
         android:id="@+id/startBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
         android:text="시작일"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:textStyle="bold"
+        android:fontFamily="@font/bm_ttf"
         android:background="@drawable/radius"
         android:id="@+id/endBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="오늘"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="100dp"

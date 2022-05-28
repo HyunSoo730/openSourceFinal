@@ -7,6 +7,9 @@
     tools:context=".BookmarkActivity">
 
     <TextView
+
+        android:textColor="@color/white"
+        android:fontFamily="@font/bm_ttf"
         android:background="#eaa8b3"
         android:id="@+id/bookBtn"
         android:textStyle="bold"

@@ -9,6 +9,7 @@
     android:orientation="vertical">
     
     <EditText
+        android:fontFamily="@font/bm_ttf"
         android:id="@+id/emailArea"
         android:hint="email"
         android:layout_margin="20dp"
@@ -16,6 +17,7 @@
         android:layout_height="50dp"/>
 
     <EditText
+        android:fontFamily="@font/bm_ttf"
         android:id="@+id/passwordArea"
         android:inputType="textPassword"
         android:hint="password"
@@ -24,6 +26,8 @@
         android:layout_height="50dp"/>
 
     <Button
+        android:fontFamily="@font/bm_ttf"
+        android:background="#eaa8b3"
         android:id="@+id/loginBtn"
         android:text="회원가입"
         android:layout_margin="20dp"
