@@ -2,6 +2,7 @@ package com.example.opensourcefinal
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -16,13 +17,18 @@ import com.example.opensourcefinal.ContentsModel
 class mainFragment : Fragment() {
 
     private val items = mutableListOf<ContentsModel>()
+    private lateinit var recyclerView : RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //리사이클러뷰 연결
+
+
     }
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -37,9 +43,9 @@ class mainFragment : Fragment() {
             items.add(ContentsModel("용산구 맛집"))
         }
 
-        //리사이클러뷰 연결
-        val recyclerView = view.findViewById<RecyclerView>(R.id.rv)
         //리사이클러뷰 가져온 후 리사이클러뷰의 어댑터에 연결해
+        recyclerView = view.findViewById(R.id.rv)
+
         val rvAdapter = MainRvAdapter(items)
         recyclerView.adapter = rvAdapter
 

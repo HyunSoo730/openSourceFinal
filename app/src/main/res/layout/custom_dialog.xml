@@ -25,7 +25,9 @@
     <Button
         android:id="@+id/dateSelect"
         android:layout_margin="20dp"
+        android:background="#2868B0"
         android:text="날짜를 선택해 주세요!"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="60dp"/>
 
@@ -33,7 +35,8 @@
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:textColor="@color/black"
+        android:background="#2868B0"
+        android:textColor="@color/white"
         android:id="@+id/saveBtn"
         android:text="저장하기"
         android:layout_width="wrap_content"

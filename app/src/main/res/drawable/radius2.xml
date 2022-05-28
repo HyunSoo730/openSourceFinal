@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" android:padding = "10dp">
+<!--    solid 색 부분이 안쪽 색이야-->
+    <solid android:color="#EBCDD5"></solid>
+    <corners
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"></corners>
+
+
+</shape>
+
+
+    <!--둥글게 해주는 레이아웃 색, 크기 등 조절하자-->

@@ -7,10 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MangoActivity">
 
-    <TextView
-        android:text="여기서 수행하기"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mangoRV"
