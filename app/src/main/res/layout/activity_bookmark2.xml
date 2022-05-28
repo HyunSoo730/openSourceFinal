@@ -9,6 +9,8 @@
     android:orientation="vertical">
 
     <TextView
+        android:textColor="@color/white"
+        android:fontFamily="@font/bm_ttf"
         android:background="#eaa8b3"
         android:gravity="center"
         android:layout_margin="100dp"

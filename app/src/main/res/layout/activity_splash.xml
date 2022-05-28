@@ -10,6 +10,7 @@
 
 
     <TextView
+        android:fontFamily="@font/bm_ttf"
         android:gravity="center"
         android:textColor="@color/white"
         android:textStyle="bold"

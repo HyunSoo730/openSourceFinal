@@ -12,9 +12,9 @@
 
 
 
+
     <ImageView
         android:layout_margin="20dp"
-        android:scaleType="fitXY"
         android:id="@+id/rvImageArea"
         android:layout_marginTop="10dp"
         android:src="@drawable/bob2"

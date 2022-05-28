@@ -5,6 +5,9 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:textColor="#eaa8b3"
+        android:textStyle="bold"
+        android:fontFamily="@font/bm_ttf"
         android:id="@+id/dateArea"
         android:layout_margin="10dp"
         android:textSize="30sp"
@@ -13,6 +16,10 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:textColor="@color/white"
+        android:background="#eaa8b3"
+        android:textStyle="bold"
+        android:fontFamily="@font/bm_ttf"
         android:id="@+id/textArea"
         android:text="메모텍스트"
         android:layout_margin="15dp"

@@ -21,12 +21,12 @@
 
 
     <TextView
+        android:fontFamily="@font/bm_ttf"
         android:textSize="20sp"
         android:textStyle="bold"
         android:id="@+id/rvTextArea"
         android:textColor="@color/white"
         android:text="text"
-        android:fontFamily="@font/nanumdasisijaghae"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:gravity="center"

@@ -18,6 +18,7 @@
         android:layout_height="match_parent"/>
 
     <TextView
+        android:fontFamily="@font/bm_ttf"
         android:id="@+id/countDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +32,8 @@
 
 
     <Button
+        android:textStyle="bold"
+        android:fontFamily="@font/bm_ttf"
         android:background="@drawable/radius"
         android:id="@+id/startBtn"
         android:layout_width="wrap_content"
@@ -43,6 +46,8 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:textStyle="bold"
+        android:fontFamily="@font/bm_ttf"
         android:background="@drawable/radius"
         android:id="@+id/endBtn"
         android:layout_width="wrap_content"
