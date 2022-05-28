@@ -64,7 +64,7 @@ class mainFragment : Fragment() {
             }
 
         }
-        return view
+        return view.rootView
     }
 
 

@@ -43,4 +43,5 @@ class MainRvAdapter(val List : MutableList<ContentsModel>) : RecyclerView.Adapte
             rv_text.text = item.name
         }
     }
+
 }
