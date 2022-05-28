@@ -1,5 +1,6 @@
 package com.example.opensourcefinal
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,13 +20,17 @@ class YongRvAdapter (val items : List<YongStore>) : RecyclerView.Adapter<YongRvA
         //롱클릭을 위한
 //        holder.itemView.setOnLongClickListener{true}
 
-        holder.itemView.setOnClickListener {
-            itemClickListener.onClick(it,position)
-            itemClickListener.onLongClick(it,position)
-        }
+//        holder.itemView.setOnClickListener {
+//            itemClickListener.onClick(it,position)
+//
+//        }
+//        holder.itemView.setOnLongClickListener {
+//            itemClickListener.onLongClick(it,position)
+//        }
     }
 
     override fun getItemCount(): Int {
+        Log.d("SIZE", items.size.toString())
         return items.size
     }
 
