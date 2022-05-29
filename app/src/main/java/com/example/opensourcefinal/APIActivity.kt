@@ -128,8 +128,7 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
                     //---------리싸이클러뷰 처리----------
                     val rv = findViewById<RecyclerView>(R.id.storeRv)   //리사이클러뷰 불러오기
                     val rvAdapter = GwangRvAdapter(items)
-                    rv.adapter = rvAdapter
-                    rv.layoutManager = LinearLayoutManager(applicationContext)
+                    rv.layoutManager = LinearLayoutManager(this@APIActivity)
 
                     //-----클릭 이벤트-----
                     rvAdapter.setItemClickListener(object : GwangRvAdapter.OnItemClickListener{
@@ -181,6 +180,7 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
                         }
                     })
                     rvAdapter.notifyDataSetChanged()
+                    rv.adapter = rvAdapter
 
                     //--------지도 마커 처리---------
                     val markers = mutableListOf(Marker())
@@ -219,9 +219,11 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
 
                     //---------리싸이클러뷰 처리----------
                     val rv = findViewById<RecyclerView>(R.id.storeRv)   //리사이클러뷰 불러오기
+                    rv.layoutManager = LinearLayoutManager(this@APIActivity)
                     val rvAdapter = YongRvAdapter(items)
-                    rv.adapter = rvAdapter
-                    rv.layoutManager = LinearLayoutManager(applicationContext)
+
+
+
 
 
                     rvAdapter.setItemClickListener(object : YongRvAdapter.OnItemClickListener{
@@ -265,6 +267,7 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
 
                     })
                     rvAdapter.notifyDataSetChanged()
+                    rv.adapter = rvAdapter
 
 
 

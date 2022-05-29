@@ -249,7 +249,7 @@ class memoFragment : Fragment() {
             startActivity(intent)
             //여기 액티비티로 가서 수행하자.
         }
-        return view
+        return view.rootView
     }
 
 

@@ -169,7 +169,7 @@ class dateFragment : Fragment() {
 
 
 
-        return view
+        return view.rootView
     }
 
 
