@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ecf0f1"
     tools:context=".memoFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -33,7 +34,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:background="@drawable/radius3"
+        android:background="@drawable/radius2"
         android:text="맛집 찾으러 가자"
         android:textSize="15sp"
         android:textStyle="bold"
