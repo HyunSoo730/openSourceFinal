@@ -21,7 +21,7 @@ class BookmarkActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         val database = Firebase.database
-        val myBookmarkRef = database.getReference("bookmark")  //어느 경로에 저장할거냐고 묻는거야
+        val myBookmarkRef = database.getReference("bookmark") //어느 경로에 저장할거냐고 묻는거야
 
         val Name = intent.getStringExtra("NAME").toString()
         val LOC = intent.getStringExtra("LOC").toString()
@@ -29,7 +29,6 @@ class BookmarkActivity : AppCompatActivity() {
         val goBook = findViewById<TextView>(R.id.bookBtn)
         goBook.setOnClickListener {
             myBookmarkRef.child(auth.currentUser!!.uid).push().setValue(BookMarkModel(Name, LOC))
-
             //그리고 북마크 페이지로 넘어가자
             val intent = Intent(this,Bookmark2Activity::class.java)
             startActivity(intent)
