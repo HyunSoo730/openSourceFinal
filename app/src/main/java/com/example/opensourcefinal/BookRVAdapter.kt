@@ -24,12 +24,12 @@ class BookRVAdapter(val context : Context, val List : MutableList<BookMarkModel>
 
     inner class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
-        init{
-            itemView.setOnLongClickListener {
-                itemClickListener.onLongClick(itemView, adapterPosition)
-                return@setOnLongClickListener true
-            }
-        }
+//        init{
+//            itemView.setOnLongClickListener {
+//                itemClickListener.onLongClick(itemView, adapterPosition)
+//                return@setOnLongClickListener true
+//            }
+//        }
 
 
 
@@ -42,15 +42,15 @@ class BookRVAdapter(val context : Context, val List : MutableList<BookMarkModel>
         }
     }
 
-    //-----리사이클러뷰 클릭 이벤트 처리------
-    interface OnItemClickListener{
-        fun onLongClick(v : View, position : Int)
-    }
+//    //-----리사이클러뷰 클릭 이벤트 처리------
+//    interface OnItemClickListener{
+//        fun onLongClick(v : View, position : Int)
+//    }
 
-    fun setItemClickListener(onItemClickLister : OnItemClickListener){
-        this.itemClickListener = onItemClickLister
-    }
-
-    private lateinit var itemClickListener : OnItemClickListener
-    //------------------------------------
+//    fun setItemClickListener(onItemClickLister : OnItemClickListener){
+//        this.itemClickListener = onItemClickLister
+//    }
+//
+//    private lateinit var itemClickListener : OnItemClickListener
+//    //------------------------------------
 }
