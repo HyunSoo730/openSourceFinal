@@ -4,6 +4,8 @@ import android.graphics.Insets.add
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,11 +16,21 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import androidx.annotation.NonNull
+
+import com.google.android.gms.tasks.OnFailureListener
+
+import com.google.android.gms.tasks.OnSuccessListener
+
+
+
 
 class Bookmark2Activity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private val bookModel = mutableListOf<BookMarkModel>()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +43,19 @@ class Bookmark2Activity : AppCompatActivity() {
         recyclerview.adapter = rvAdapter
 
         recyclerview.layoutManager = LinearLayoutManager(this)
+
+
+        //LongClick 시 삭제
+        rvAdapter.setItemClickListener(object : BookRVAdapter.OnItemClickListener {
+            override fun onLongClick(v: View, position: Int) {
+                bookModel.removeAt(position)
+                Toast.makeText(applicationContext, "삭제했습니다!", Toast.LENGTH_SHORT).show()
+                rvAdapter.notifyDataSetChanged()
+            }
+
+        })
+        recyclerview.adapter = rvAdapter
+
 
 
 

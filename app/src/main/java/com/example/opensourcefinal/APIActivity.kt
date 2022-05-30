@@ -204,6 +204,7 @@ class APIActivity : AppCompatActivity() , OnMapReadyCallback {
     }
 
 
+
     //용산구 맛집 데이터 불러오기
     private fun getYongStoreStatus(){
         //밑에 함수 Page는 무시하고, PerPage는 음식점 데이터 개수 설정하는 거 (너무 많으면 렉걸리더라)

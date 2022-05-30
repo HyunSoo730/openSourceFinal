@@ -119,19 +119,10 @@ class dateFragment : Fragment() {
                     calendar_start.set(year,month+1, dayOfMonth)
                     val calDate = TimeUnit.MILLISECONDS.toDays(calendar_end.timeInMillis - calendar_start.timeInMillis)   //사귄 날짜에 대해서 millisecond로 변환
 
-                    textarea.text = startDate
+                    textarea.text = "우리가 만난 지"
                     Log.d("textarea", textarea.text.toString())
 
-//                    var textArea = view?.findViewById<TextView>(R.id.countDate)
-//                    Log.d("textArea", textArea.toString())
-////                    if (textArea != null) {
-////                        textArea.setText("${year} + ${month + 1} + ${dayOfMonth}".toString())
-////                    }   //카운터 설정.
-////                    textArea!!.text = startDate
-//                    textArea?.setText(startDate)
-////                    textArea.invalidate()
-////                    textArea.setText("${year} + ${month + 1} + ${dayOfMonth}")
-//                    Log.d("lalala", textArea?.text.toString())
+//
                 }
 
             }, year, month, day)
@@ -160,7 +151,7 @@ class dateFragment : Fragment() {
 
 //                    var textArea = view!!.findViewById<TextView>(R.id.countDate)
 //                    textArea.setText(calDate.toString())   //카운터 설정.
-                    textarea.text = "D + " + calDate.toString()
+                    textarea.text = "우리가 만난 지\nD + " + calDate.toString()
                 }
 
             }, year, month, day)

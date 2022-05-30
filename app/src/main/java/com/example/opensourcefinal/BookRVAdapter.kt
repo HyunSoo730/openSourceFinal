@@ -23,6 +23,16 @@ class BookRVAdapter(val context : Context, val List : MutableList<BookMarkModel>
 
 
     inner class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
+
+        init{
+            itemView.setOnLongClickListener {
+                itemClickListener.onLongClick(itemView, adapterPosition)
+                return@setOnLongClickListener true
+            }
+        }
+
+
+
         fun bindItems(item : BookMarkModel){
             val Name = itemView.findViewById<TextView>(R.id.storeName)
             val address = itemView.findViewById<TextView>(R.id.storeAddress)
@@ -31,4 +41,16 @@ class BookRVAdapter(val context : Context, val List : MutableList<BookMarkModel>
             address.text = item.loc
         }
     }
+
+    //-----리사이클러뷰 클릭 이벤트 처리------
+    interface OnItemClickListener{
+        fun onLongClick(v : View, position : Int)
+    }
+
+    fun setItemClickListener(onItemClickLister : OnItemClickListener){
+        this.itemClickListener = onItemClickLister
+    }
+
+    private lateinit var itemClickListener : OnItemClickListener
+    //------------------------------------
 }

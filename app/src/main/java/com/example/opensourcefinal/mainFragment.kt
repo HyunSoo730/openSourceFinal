@@ -37,7 +37,7 @@ class mainFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_main, container, false)
 
 
-        //구 위치만 추가???
+        //구 위치만 추가
         if(items.size == 0) {
             items.add(ContentsModel("광진구 맛집"))
             items.add(ContentsModel("용산구 맛집"))
