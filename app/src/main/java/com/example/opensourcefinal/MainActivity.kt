@@ -73,12 +73,13 @@ class MainActivity : AppCompatActivity() {
         val header: View = navigationView.getHeaderView(0)
         header.findViewById<TextView>(R.id.email_address).setText(currentUser?.email)
 
+        val intent = Intent(this,Bookmark2Activity::class.java)
 
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
 
-                R.id.random_menu -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
+                R.id.nav_bookmark -> startActivity(intent)
                 R.id.nav_message -> Toast.makeText(applicationContext, "Clicked Message", Toast.LENGTH_SHORT).show()
                 R.id.nav_sync -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
                 R.id.nav_trash -> Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT).show()
