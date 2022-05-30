@@ -20,6 +20,8 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import java.util.*
+import android.widget.AdapterView
+import android.widget.AdapterView.OnItemLongClickListener
 
 
 class memoFragment : Fragment() {
@@ -141,6 +143,21 @@ class memoFragment : Fragment() {
         val adapter_list = memoListViewAdapter(memodateModelList)   //어댑터 연결
         listview.adapter = adapter_list
         //리스트뷰 연결
+
+
+
+        //리스트뷰 롱 클릭시 삭제
+        listview.setOnItemLongClickListener(OnItemLongClickListener { parent, v, position, id ->
+
+
+
+
+            memodateModelList.removeAt(position)
+            Toast.makeText(context, "삭제했습니다!", Toast.LENGTH_SHORT).show()
+            adapter_list.notifyDataSetChanged()
+            true
+        })
+
 
 
         //내 uid에 해당하는 데이터베이스 저장 값 불러옴.
