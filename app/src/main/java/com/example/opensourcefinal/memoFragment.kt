@@ -22,11 +22,14 @@ import com.google.firebase.ktx.Firebase
 import java.util.*
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemLongClickListener
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.*
 
 
 class memoFragment : Fragment() {
     val memodateModelList = mutableListOf<memoDataModel>()  //안에 넣을 리스트
-
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -130,7 +133,7 @@ class memoFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_memo, container, false)
 
-
+        auth = Firebase.auth
 
 
         //데이터베이스에서 불러오는 부분에서 안불러와짐.
@@ -144,19 +147,17 @@ class memoFragment : Fragment() {
         listview.adapter = adapter_list
         //리스트뷰 연결
 
+        val deleteBtn = view.findViewById<Button>(R.id.deleteBtn)
+        deleteBtn.setOnClickListener {
+            val mDatabase = FirebaseDatabase.getInstance()
+            val dataRef = mDatabase.getReference("DateAndMemo")
+            dataRef.child(auth.currentUser!!.uid.toString()).removeValue()
+            memodateModelList.removeAll(memodateModelList)
+
+        }
+        adapter_list.notifyDataSetChanged()
 
 
-        //리스트뷰 롱 클릭시 삭제
-        listview.setOnItemLongClickListener(OnItemLongClickListener { parent, v, position, id ->
-
-
-
-
-            memodateModelList.removeAt(position)
-            Toast.makeText(context, "삭제했습니다!", Toast.LENGTH_SHORT).show()
-            adapter_list.notifyDataSetChanged()
-            true
-        })
 
 
 
@@ -268,6 +269,8 @@ class memoFragment : Fragment() {
         }
         return view.rootView
     }
+
+
 
 
 }
