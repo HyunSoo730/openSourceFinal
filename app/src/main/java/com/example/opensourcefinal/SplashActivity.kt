@@ -21,13 +21,6 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-
-
-
-
-
-
-
         //스플래쉬화면에서 파이어베이스 인증 권한 가져와서 검사 시행.
 
         //비밀번호 기반 계정 만들기를 하기 위해서 먼저
